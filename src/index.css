@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+     /* *{
+        @apply outline-double;
+    } */
+    body {
+      @apply text-zinc-950;
+      @apply bg-gray-100;
+    }
+    
+    .hero-layout{
+      @apply flex flex-col items-center justify-center gap-10;
+    }
+    
+
+  }
