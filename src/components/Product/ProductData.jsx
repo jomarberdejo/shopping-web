@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import StarRating from "./StarRating";
-import {AddCartButton} from './AddCartButton';
+import {AddCartButton} from '../Cart/AddCartButton';
 
 import { FaDollarSign } from "react-icons/fa";
 

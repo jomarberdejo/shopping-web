@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Product from "./Product";
-import { categories } from "../utils/categories";
+import Product from "../Product/Product";
+import { categories } from "../../utils/categories";
 const Category = () => {
   const [activeCategory, setActiveCategory] = useState("/products");
 

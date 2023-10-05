@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import ProductData from "./ProductData";
-import { highestRating } from "../utils/highestRating";
-import { RenderSkeletonLoading } from "./RenderSkeletonLoading";
+import { highestRating } from "../../utils/highestRating";
+import { RenderSkeletonLoading } from "../SkeletonLoading/RenderSkeletonLoading";
 
 const Product = ({ queryKey }) => {
   const { data, isLoading } = useQuery({

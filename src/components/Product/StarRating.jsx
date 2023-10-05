@@ -1,4 +1,4 @@
-import { renderStars } from "../utils/renderStars";
+import { renderStars } from "../../utils/renderStars";
 import { AiFillStar } from "react-icons/ai";
 
 const StarRating = ({ productRating, highestRating }) => {

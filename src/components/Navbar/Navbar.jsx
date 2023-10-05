@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import { BsCart4 } from "react-icons/bs";
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full bg-slate-700 z-10 sticky top-0 right-0 shadow-md">
+      <header className="w-full bg-slate-700 z-10 sticky top-0 right-0 shadow-md h-[55px]">
         <nav className="max-w-2xl mx-auto px-4 ">
           <ul className="flex items-center justify-between p-2">
             <div className="flex items-center justify-between">

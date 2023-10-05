@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import PaymentForm from "./PaymentForm";
 import { FaDollarSign } from "react-icons/fa";
 

@@ -8,7 +8,10 @@ const HeroSection = () => {
   return (
     <>  
  
-    <main className="max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11"> 
+    <main className="max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11 "> 
+     {/*
+     h-[calc(100svh - 55px)]
+      */}
 
       <div className="hero-layout md:gap-10">
         <h1 className="text-4xl font-bold leading-normal text-red-700">

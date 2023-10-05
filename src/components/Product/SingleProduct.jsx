@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import StarRating from "./StarRating";
-import { RenderSkeletonLoading } from "./RenderSkeletonLoading";
-import {AddCartButton} from './AddCartButton';
-import { highestRating } from "../utils/highestRating";
+import { RenderSkeletonLoading } from "../SkeletonLoading/RenderSkeletonLoading";
+import {AddCartButton} from '../Cart/AddCartButton';
+import { highestRating } from "../../utils/highestRating";
 import { FaDollarSign } from "react-icons/fa";
 const SingleProduct = () => {
   const { id } = useParams();

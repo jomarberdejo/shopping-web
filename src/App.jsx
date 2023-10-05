@@ -1,11 +1,26 @@
-import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
-import Category from './components/Category';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SingleProduct from './components/SingleProduct';
-import Cart from './components/Cart';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Category from './components/Category/Category';
+import SingleProduct from './components/Product/SingleProduct';
+import Cart from './components/Cart/Cart';
+import Navbar from './components/Navbar/Navbar';
+import HeroSection from './components/Hero/HeroSection';
+import LoginForm from './components/Login/LoginForm';
+
 const App = () => {
-    return (_jsx(_Fragment, { children: _jsxs(Router, { children: [_jsx(Navbar, {}), _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(HeroSection, {}) }), _jsx(Route, { path: "/category", element: _jsx(Category, {}) }), _jsx(Route, { path: "/cart", element: _jsx(Cart, {}) }), _jsx(Route, { path: "/single/:id", element: _jsx(SingleProduct, {}) })] })] }) }));
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/single/:id" element={<SingleProduct />} />
+      </Routes>
+    </Router>
+  );
 };
+
 export default App;
