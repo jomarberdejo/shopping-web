@@ -8,6 +8,10 @@
   color: transparent;
 }
 
+.min-height{
+  min-height: calc(100svh - 45px);
+}
+
 /*
 ::-webkit-scrollbar {
   width: 0;

@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <>
       <main
-        className={`max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11 ${
+        className={`min-height max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11 ${
           showContent ? "opacity-100" : "opacity-0" 
         } transition-opacity duration-500 ease-in-out`}
       >

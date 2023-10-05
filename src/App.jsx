@@ -6,7 +6,7 @@ import SingleProduct from './components/Product/SingleProduct';
 import Cart from './components/Cart/Cart';
 import Navbar from './components/Navbar/Navbar';
 import HeroSection from './components/Hero/HeroSection';
-
+import NotFound from './components/NotFound/NotFound';
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Route path="/category" element={<Category />} />
         <Route path="/single/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
