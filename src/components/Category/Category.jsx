@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Product from "../Product/Product";
 import { categories } from "../../utils/categories";
+import Footer from '../Footer/Footer';
+
 const Category = () => {
   const [activeCategory, setActiveCategory] = useState("/products");
 
@@ -33,6 +35,7 @@ const Category = () => {
           </div>
         </div>
       </main>
+     <Footer />
     </>
   );
 };

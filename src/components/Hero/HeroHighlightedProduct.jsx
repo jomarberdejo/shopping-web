@@ -10,33 +10,32 @@ const HeroHighlightedProduct = () => {
     }
   };
 
-
-
   return (
     <>
-      <div className="p-4">
-        <img 
-        src={imgUrl} 
-        alt={imgUrl} 
-        width={300} 
-        height={300} 
-        className="w-[400px] h-[400px] object-contain"
-        
+      <div className="p-4 shadow-lg rounded-lg bg-white">
+        <img
+          src={imgUrl}
+          alt={imgUrl}
+          width={300}
+          height={300}
+          className="w-[400px] h-[400px] object-contain transition-transform transform hover:scale-105"
         />
       </div>
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 mt-4">
         {productHighlight.map((product) => (
           <div
             key={product.id}
-            className={`flex items-center justify-center text-white cursor-pointer p-4 max-w-md w-[90%] ${imgUrl === product.image ? 'rounded outline outline-2 outline-orange-500 outline-offset-2' : ''}`}
+            className={`flex items-center justify-center text-white cursor-pointer p-4 max-w-md w-[90%] ${
+              imgUrl === product.image ? "rounded shadow-lg bg-gradient-to-br from-white  to-white " : ""
+            } transition-transform transform hover:scale-105`}
             onClick={() => handleClick(product.image)}
           >
-            <img 
-            src={product.image} 
-            alt={product.title} 
-            width={120} 
-            height={120} 
-            className="w-[100px] h-[100px] object-contain "
+            <img
+              src={product.image}
+              alt={product.title}
+              width={120}
+              height={120}
+              className="w-[100px] h-[100px] object-contain"
             />
 
             {product.name}

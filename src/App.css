@@ -1,0 +1,9 @@
+
+.text-balance {
+  text-wrap: balance;
+}
+.logo-text{
+  background-image: linear-gradient(90deg, #FFB6C1, #E6E6FA);
+  -webkit-background-clip: text;
+  color: transparent;
+}
