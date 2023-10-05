@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react"; // Import useEffect and useState
+import { useEffect, useState } from "react"; 
 import HeroHighlightedProduct from "./HeroHighlightedProduct";
 import Footer from '../Footer/Footer';
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  const [showContent, setShowContent] = useState(false); // State to control animation
+  const [showContent, setShowContent] = useState(false); 
 
-  // Use useEffect to trigger animation when the component mounts
   useEffect(() => {
     setShowContent(true);
   }, []);
@@ -16,7 +15,7 @@ const HeroSection = () => {
     <>
       <main
         className={`max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11 ${
-          showContent ? "opacity-100" : "opacity-0" // Apply opacity based on showContent state
+          showContent ? "opacity-100" : "opacity-0" 
         } transition-opacity duration-500 ease-in-out`}
       >
         <div className="hero-layout md:gap-10">
