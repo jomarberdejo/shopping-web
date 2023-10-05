@@ -1,20 +1,31 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react"; // Import useEffect and useState
 import HeroHighlightedProduct from "./HeroHighlightedProduct";
 import Footer from '../Footer/Footer';
 
 const HeroSection = () => {
   const navigate = useNavigate();
+  const [showContent, setShowContent] = useState(false); // State to control animation
+
+  // Use useEffect to trigger animation when the component mounts
+  useEffect(() => {
+    setShowContent(true);
+  }, []);
 
   return (
     <>
-      <main className="max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11">
+      <main
+        className={`max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 bg-white p-4 gap-11 ${
+          showContent ? "opacity-100" : "opacity-0" // Apply opacity based on showContent state
+        } transition-opacity duration-500 ease-in-out`}
+      >
         <div className="hero-layout md:gap-10">
           <h1 className="text-4xl font-bold leading-normal text-red-700">
             Discover the Latest in Electronics and Fashion
           </h1>
 
           <p className="font-medium">
-            Explore and enjoy our wide range of electronics, stylish men and women outfits, and  jewelry products.
+            Explore and enjoy our wide range of electronics, stylish men and women outfits, and jewelry products.
           </p>
 
           <button
@@ -27,10 +38,8 @@ const HeroSection = () => {
         <aside className="hero-layout">
           <HeroHighlightedProduct />
         </aside>
-        
-
       </main>
-              <Footer />
+      <Footer />
     </>
   );
 };
