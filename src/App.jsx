@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Category from './components/Category/Category';
 import SingleProduct from './components/Product/SingleProduct';
@@ -17,7 +17,6 @@ const App = () => {
         <Route path="/category" element={<Category />} />
         <Route path="/single/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
