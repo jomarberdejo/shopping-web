@@ -7,3 +7,11 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/*
+::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+*/
