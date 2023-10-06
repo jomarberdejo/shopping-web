@@ -15,9 +15,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/category" element={<Category />} />
-        <Route path="/single/:id" element={<SingleProduct />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/single/:id" element={<SingleProduct />} />
         <Route path="*" element={<NotFound />} />
+
       </Routes>
     </Router>
   );
