@@ -8,10 +8,12 @@
   color: transparent;
 }
 
-.min-height{
+.notfound-min-height{
   min-height: calc(100svh - 45px);
 }
-
+.hero-min-height{
+  min-height: calc(100svh - 253px);
+}
 /*
 ::-webkit-scrollbar {
   width: 0;

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-slate-700 to-gray-900 text-white py-6 mt-8">
+    <footer className="bg-gradient-to-r from-slate-700 to-gray-900 text-white py-6 mt-8 h-44">
       <div className="container mx-auto text-center">
         <p className="mt-2">Follow us on social media for updates and promotions</p>
         <div className="flex justify-center mt-4">
