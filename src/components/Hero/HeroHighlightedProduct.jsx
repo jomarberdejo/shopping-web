@@ -18,7 +18,9 @@ const HeroHighlightedProduct = () => {
           alt={imgUrl}
           width={300}
           height={300}
+          loading= "lazy"
           className="w-[400px] h-[400px] object-contain transition-transform transform hover:scale-105"
+          
         />
       </div>
       <div className="flex justify-center gap-4 mt-4">
@@ -35,6 +37,7 @@ const HeroHighlightedProduct = () => {
               alt={product.title}
               width={120}
               height={120}
+              loading= "lazy"
               className="w-[100px] h-[100px] object-contain"
             />
 
