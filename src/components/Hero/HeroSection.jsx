@@ -24,7 +24,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="font-medium">
-            Explore and enjoy our wide range of electronics, stylish men and women outfits, and jewelry products.
+            Hello, Explore and enjoy shopping to our wide range of available products. What are you waiting for? Choose your favourite product and add simply add it into your cart.
           </p>
 
           <button

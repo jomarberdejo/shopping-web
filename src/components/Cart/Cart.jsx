@@ -34,7 +34,7 @@ const Cart = () => {
   return (
     <div className="max-w-4xl m-auto w-[90%]">
       <p className=" flex items-center gap-1 relative py-4 px-2 justify-end">
-        <span className="flex items-center gap-1 font-bold text-gray-800 text-xl border-2 border-gray-950 p-2 rounded">Total: <FaDollarSign /> {total}</span>
+        <span className="flex items-center gap-1 font-bold text-gray-800 text-xl border-2 border-gray-950 p-2 rounded bg-white">Total: <FaDollarSign /> {total}</span>
       </p>
       <h2 className="text-gray-800 text-center text-2xl font-semibold mt-4 mb-4">Your Cart</h2>
       <ul>
