@@ -13,7 +13,10 @@ export const AddCartButton = (props) => {
 
     
       toast.success(
-        `${props.title} added to cart.`
+        `${props.title} added to cart.`,
+        {
+          autoClose: 500,
+        }
       );
     
   };
