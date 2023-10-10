@@ -12,7 +12,7 @@ const Category = () => {
 
   return (
     <>
-      <main className="max-w-screen-2xl m-auto">
+      <main className="hero-min-height max-w-screen-2xl m-auto">
         <div className="grid grid-cols-1 md:grid-cols-7 md:gap-2">
           <aside className="flex justify-center md:justify-start gap-2 md:gap-0 md:flex-col md:items-start md:col-span-1 flex-wrap py-8">
             {categories.map((category) => (
