@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { productHighlight } from "../../utils/productHighlight";
-import {highlight1} from 'assets/images/highlight1.jpg';
+import {highlight1} from 'assets/images/highlight15.jpg';
 
 const HeroHighlightedProduct = () => {
   const [imgUrl, setImgUrl] = useState(highlight1);
