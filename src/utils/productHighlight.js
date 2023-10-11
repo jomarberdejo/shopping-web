@@ -1,3 +1,7 @@
+import {highlight1} from 'assets/images/highlight1.jpg';
+import {highlight2} from 'assets/images/highlight2.jpg';
+import {highlight3} from 'assets/images/highlight3.jpg';
+
 export const productHighlight =
 [
   
@@ -6,13 +10,13 @@ export const productHighlight =
     title: "Premium Slim Fit T-Shirts ",
  
    
-    image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    image: highlight1,
   
   },
   {
     id: 2,
     title: "Foldsack No. 1 Backpack",
-    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    image: "highlight2",
   
   },
   {
@@ -20,7 +24,7 @@ export const productHighlight =
     title: "Mens Cotton Jacket",
     
   
-    image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    image: "highlight3",
   
   }
 ]
