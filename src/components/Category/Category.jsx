@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Product from "../Product/Product";
 import { categories } from "../../utils/categories";
 import Footer from '../Footer/Footer';
@@ -10,9 +10,17 @@ const Category = () => {
     setActiveCategory(categoryKey);
   };
 
+  const [showContent, setShowContent] = useState(false); 
+
+  useEffect(() => {
+    setShowContent(true);
+  }, []);
+
   return (
     <>
-      <main className="hero-min-height max-w-screen-2xl m-auto">
+      <main className={`hero-min-height max-w-screen-2xl m-auto ${
+          showContent ? "opacity-100" : "opacity-0" 
+        } transition-opacity duration-500 ease-in-out`}>
         <div className="grid grid-cols-1 md:grid-cols-7 md:gap-2">
           <aside className="flex justify-center md:justify-start gap-2 md:gap-0 md:flex-col md:items-start md:col-span-1 flex-wrap py-8">
             {categories.map((category) => (
