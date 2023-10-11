@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { productHighlight } from "../../utils/productHighlight";
+import {highlight1} from 'assets/images/highlight1.jpg';
 
 const HeroHighlightedProduct = () => {
-  const [imgUrl, setImgUrl] = useState("https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg");
+  const [imgUrl, setImgUrl] = useState(highlight1);
 
   const handleClick = (productImg) => {
     if (productImg !== imgUrl) {
