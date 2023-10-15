@@ -14,7 +14,9 @@
     .hero-layout{
       @apply flex flex-col items-center justify-center gap-10;
     }
-    
+   .cart-buttons-style{
+     @apply bg-blue-500 text-white py-2 px-4 mt-4 rounded-sm hover:bg-blue-600 focus:outline-none block mx-auto my-4 w-full;
+   }
 
     
 

@@ -61,7 +61,7 @@ const Navbar = () => {
                 className="text-lg logo-text font-bold cursor-pointer"
                 onClick={() => navigate("/")}
               >
-                Fashion Fusion
+                Trendy
               </li>
             </div>
 

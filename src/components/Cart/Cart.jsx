@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useCart } from "../../context/CartContext";
-import PaymentForm from "./PaymentForm";
 import { FaDollarSign } from "react-icons/fa";
 
 const Cart = () => {
-  const { state, dispatch } = useCart();
+  const { state, dispatch, clearCart } = useCart();
 
   const incrementItem = (productId) => {
     dispatch({ type: "INCREMENT_ITEM", productId });
@@ -18,16 +17,11 @@ const Cart = () => {
     dispatch({ type: "REMOVE_FROM_CART", productId });
   };
 
-  const [showPaymentForm, setShowPaymentForm] = useState(false);
-
-  const openPaymentForm = () => {
-    setShowPaymentForm(true);
-  };
+  const handleClearCart = () => {
+    clearCart();
+  }
 
 
-  const closePaymentForm = () => {
-    setShowPaymentForm(false);
-  };
   
   const total = state.cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)
 
@@ -61,19 +55,21 @@ const Cart = () => {
       </ul>
 
       {state.cartItems.length > 0 ? (
-        <button onClick={openPaymentForm} className="bg-blue-500 text-white py-2 px-4 mt-4 rounded-sm hover:bg-blue-600 focus:outline-none block mx-auto my-4 w-full">Purchase Now</button>
+        <div>
+        
+        <button onClick={()=> alert("Payment integration will be added soon.")} className="cart-buttons-style">Purchase Now</button>
+        
+         <button onClick={handleClearCart} className="cart-buttons-style">Clear Cart</button>
+          
+         
+        </div>
+      
+
+        
       ) : <p className='mt-10 text-lg text-center  text-zinc-900'> Your cart is empty. </p>}
 
 
-      {/* Payment Form Modal */}
-      {showPaymentForm && (
-        <div className="fixed top-0 left-0 h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50 p-4 w-full">
-          <div className="bg-white p-8 rounded-md shadow-md w-full max-w-2xl">
-            <h2 className="text-xl font-semibold mb-4">Payment Information</h2>
-            <PaymentForm closeForm={closePaymentForm} cartItems= {state.cartItems} />
-          </div>
-        </div>
-      )}
+
     </div>
   );
 };
