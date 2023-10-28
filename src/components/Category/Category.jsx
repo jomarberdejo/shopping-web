@@ -18,6 +18,7 @@ const Category = () => {
 
   return (
     <>
+    
       <main className={`hero-min-height max-w-screen-2xl m-auto ${
           showContent ? "opacity-100" : "opacity-0" 
         } transition-opacity duration-500 ease-in-out`}>
